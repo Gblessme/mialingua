@@ -1,0 +1,51 @@
+/* styles.css */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+}
+
+.logo img {
+    width: 100px; /* Taille de votre logo */
+    height: auto;
+    margin-right: auto; /* Pour aligner le logo à gauche */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 20px; /* Espacement entre les éléments du menu */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff; /* Couleur du texte des liens */
+}
+
+/* Media Query pour le mode responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Affichage en colonne */
+        align-items: flex-start; /* Alignement à gauche */
+        padding: 10px; /* Espacement interne */
+    }
+
+    .logo img {
+        margin-right: 0; /* Retrait de la marge à droite */
+        margin-bottom: 10px; /* Espacement en bas */
+    }
+
+    .menu ul li {
+        display: block; /* Affichage en bloc */
+        margin: 5px 0; /* Espacement entre les éléments */
+    }
+}
